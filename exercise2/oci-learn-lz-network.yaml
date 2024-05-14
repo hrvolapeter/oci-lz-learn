@@ -22,7 +22,7 @@ network_configuration:
             egress_rules: {}
             ingress_rules: {}
           route_tables:
-            RT_TABLE:
+            SUBNET-RT-KEY:
               display_name: SUBNET-RT-KEY 
               route_rules: {}
           subnets:
