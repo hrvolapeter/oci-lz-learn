@@ -113,7 +113,7 @@ network_configuration:
           is_oracle_gua_allocation_enabled: false
           route_tables:
             SUBNET-CH-RT-KEY:
-              display_name: subnet-channels-rt 
+              display_name: subnet-channels-rt
               route_rules: {}
           subnets:
             SUBNET-CH-KEY:
