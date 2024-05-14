@@ -75,9 +75,10 @@ network_configuration:
               route_table_key: SUBNET-HUB-RT-KEY
               security_list_keys:
               - default_security_list
-
     SPOKE-CHANNELS:
       category_compartment_id: CMP-CHANNELS-NETWORK-KEY
+      category_freeform_tags:
+        vision-sub-environment: spokechannels
       vcns:
         VCN-CHANNELS-KEY:
           block_nat_traffic: false
@@ -127,4 +128,3 @@ network_configuration:
               route_table_key: SUBNET-CH-RT-KEY
               security_list_keys:
               - default_security_list
-
