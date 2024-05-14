@@ -10,7 +10,7 @@ network_configuration:
     vision-environment: vision
   network_configuration_categories:
     CHANNEL:
-      category_compartment_id: CMP_CHANNELS_NETWORK_KEY
+      category_compartment_id: CMP-CHANNELS-NETWORK-KEY
       vcns:
         VCN-CHANNELS-NETWORK-KEY:
           display_name: vcn-channels-np
