@@ -15,7 +15,7 @@ network_configuration:
         VCN-CHANNELS-NETWORK-KEY:
           display_name: vcn-channels-np
           block_nat_trafic: false
-          dns_label: vcn-channels-dns
+          dns_label: vcn-dns
           cidr_blocks:
           - 10.0.1.0/24
           default-security-list:
