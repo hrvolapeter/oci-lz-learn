@@ -23,8 +23,8 @@ network_configuration:
           cidr_blocks:
           - 10.0.1.0/24
           default-security-list:
-            egress_rules: {}
-            ingress_rules: {}
+            egress_rules: []
+            ingress_rules: []
           route_tables:
             SUBNET-RT-KEY:
               display_name: SUBNET-RT-KEY 
