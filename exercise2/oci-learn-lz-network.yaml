@@ -16,6 +16,10 @@ network_configuration:
           display_name: vcn-channels-np
           block_nat_trafic: false
           dns_label: vcn-dns
+          is_attach_drg: false
+          is_create_igw: false
+          is_ipv6enabled: false
+          is_oracle_gua_allocation_enabled: false
           cidr_blocks:
           - 10.0.1.0/24
           default-security-list:
