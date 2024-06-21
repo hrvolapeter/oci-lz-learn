@@ -1,0 +1,22 @@
+{
+  "compartment_configuration": {
+    "enable_delete": true,
+    "default_parent_id": "ocid1.compartment.oc1..aaaaaaaakamlhpsymvfpca2tystvip4zvqmnumk2iwsjb6pu6npczacgo5fa",
+    "compartments": {
+      "CMP-OE1-PROD-PLATFORM-OCVS-KEY": {
+        "name": "cmp-p-oe1-p-platform-ocvs",
+        "description": "one-oe-lz environment:PROD compartment:[OE1/PROD/PLATFORM/OCVS]",
+        "children": {
+          "CMP-OE1-PROD-PLATFORM-OCVS-LB-KEY": {
+            "name": "cmp-p-oe1-p-platform-ocvs-lb",
+            "description": "one-oe-lz environment:PROD compartment:[OE1/PROD/PLATFORM/OCVS/LB]"
+          },
+          "CMP-OE1-PROD-PLATFORM-OCVS-SDDC-KEY": {
+            "name": "cmp-p-oe1-p-platform-ocvs-sddc",
+            "description": "one-oe-lz environment:PROD compartment:[OE1/PROD/PLATFORM/OCVS/SDDC]"
+          }
+        }
+      }
+    }
+  }
+}

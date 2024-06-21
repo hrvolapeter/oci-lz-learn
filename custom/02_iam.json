@@ -1,0 +1,29 @@
+{
+  "groups_configuration": {
+    "groups": {}
+  },
+  "dynamic_groups_configuration": {
+    "dynamic_groups": {}
+  },
+  "policies_configuration": {
+    "enable_cis_benchmark_checks": "false",
+    "supplied_policies": {
+      "PCY-GRP-OE1-PROD-PLATFORM-OCVS-ADMIN-KEY": {
+        "name": "pcy-p-oe1-p-platform-ocvs-admins",
+        "description": "one-oe-lz environment:PROD compartment:[OE1/PROD/PLATFORM/OCVS]",
+        "compartment_id": "CMP-OE1-PROD-PLATFORM-OCVS-KEY",
+        "statements": [
+          "allow group GRP-OE1-PROD-PLATFORM-OCVS-ADMIN-KEY to manage sddcs in compartment CMP-OE1-PROD-PLATFORM-OCVS-KEY",
+          "allow group GRP-OE1-PROD-PLATFORM-OCVS-ADMIN-KEY to manage instances in compartment CMP-OE1-PROD-PLATFORM-OCVS-KEY",
+          "allow group GRP-OE1-PROD-PLATFORM-OCVS-ADMIN-KEY to manage vcns in compartment CMP-OE1-PROD-PLATFORM-OCVS-KEY",
+          "allow group GRP-OE1-PROD-PLATFORM-OCVS-ADMIN-KEY to use subnets in compartment CMP-OE1-PROD-PLATFORM-OCVS-KEY",
+          "allow group GRP-OE1-PROD-PLATFORM-OCVS-ADMIN-KEY to use vnics in compartment CMP-OE1-PROD-PLATFORM-OCVS-KEY",
+          "allow group GRP-OE1-PROD-PLATFORM-OCVS-ADMIN-KEY to use vlans in compartment CMP-OE1-PROD-PLATFORM-OCVS-KEY",
+          "allow group GRP-OE1-PROD-PLATFORM-OCVS-ADMIN-KEY to use private-ips in compartment CMP-OE1-PROD-PLATFORM-OCVS-KEY",
+          "allow group GRP-OE1-PROD-PLATFORM-OCVS-ADMIN-KEY to inspect security-lists in compartment CMP-OE1-PROD-PLATFORM-OCVS-KEY",
+          "allow group GRP-OE1-PROD-PLATFORM-OCVS-ADMIN-KEY to use network-security-groups in compartment CMP-OE1-PROD-PLATFORM-OCVS-KEY"
+        ]
+      }
+    }
+  }
+}

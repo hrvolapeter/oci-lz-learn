@@ -1,0 +1,76 @@
+{
+  "network_configuration": {
+    "default_enable_cis_checks": false,
+    "default_compartment_id": "<OE1-prod-network>",
+    "network_configuration_categories": {
+      "OCVS": {
+        "inject_into_existing_vcns": {},
+        "vcns": {
+          "VCN-FRA-OE1-PLATFORM-OCVS-KEY": {
+            "block_nat_traffic": false,
+            "cidr_blocks": [
+              "10.0.0.0/18"
+            ],
+            "dhcp_options": {},
+            "display_name": "vcn-fra-oe1-platform-ocvs",
+            "dns_label": "oe1pocvs",
+            "is_ipv6enabled": false,
+            "is_attach_drg": false,
+            "is_create_igw": false,
+            "is_oracle_gua_allocation_enabled": false,
+            "network_security_groups": {},
+            "default_route_table": {
+              "RT-OE1-PROD-OCVS-KEY": {
+                "display_name": "rt-oe1-prod-ocvs",
+                "route_rules": {
+                  "drg_route": {
+                    "description": "Route to drg",
+                    "destination": "0.0.0.0/0",
+                    "destination_type": "CIDR_BLOCK",
+                    "network_entity_id": "<OCID of DRG>"
+                  }
+                }
+              }
+            },
+            "route_tables": {},
+            "default_security_list": {
+              "display_name": "sl-fra-oe1-ocvs",
+              "egress_rules": [],
+              "ingress_rules": []
+            },
+            "security_lists": {},
+            "subnets": {},
+            "vcn_specific_gateways": {
+              "internet_gateways": {},
+              "nat_gateways": {},
+              "service_gateways": {}
+            }
+          }
+        },
+        "non_vcn_specific_gateways": {
+          "inject_into_existing_drgs": {
+            "DRGATT-OCVS": {
+              "drg_id": "<PROD DRG>",
+              "drg_attachments": {
+                "DRGATT-FRA-HUB-OCVS": {
+                  "display_name": "vcn-ocvs-drg-attachment",
+                  "drg_route_table_id": "<OCID DRG ROUTE>",
+                  "network_details": {
+                    "attached_resource_key": "VCN-OCVS-KEY",
+                    "type": "VCN"
+                  }
+                }
+              }
+            }
+          },
+          "dynamic_routing_gateways": {},
+          "network_firewalls_configuration": {
+            "network_firewalls": {},
+            "network_firewall_policies": {}
+          },
+          "l7_load_balancers": {}
+        }
+      }
+    }
+  }
+}
