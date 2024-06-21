@@ -1,5 +1,5 @@
 {
-  "compartments_compartments_configuration": {
+  "compartments_configuration": {
     "enable_delete": true,
     "default_parent_id": "ocid1.compartment.oc1..aaaaaaaakamlhpsymvfpca2tystvip4zvqmnumk2iwsjb6pu6npczacgo5fa",
     "compartments": {
