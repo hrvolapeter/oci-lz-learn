@@ -45,7 +45,14 @@
                                     "src_type": "CIDR_BLOCK",
                                     "icmp_type": 3,
                                     "icmp_code": 4
-                                }
+                                },
+                                {"stateless": false,
+                                "protocol": "TCP",
+                                "description": "desc",
+                                "src": "1.1.1.1/32",
+                                "src_type": "CIDR_BLOCK",
+                                "tcp_port_min": 1,
+                                "tcp_port_max": 1}
                             ]
             },
             "security_lists": {},
