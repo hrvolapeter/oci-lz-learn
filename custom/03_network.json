@@ -27,7 +27,7 @@
                     "description": "Route to drg",
                     "destination": "0.0.0.0/0",
                     "destination_type": "CIDR_BLOCK",
-                    "network_entity_id": "<OCID of DRG>"
+                    "network_entity_id": "ocid1.drg.oc1.eu-frankfurt-1.aaaaaaaajna5c3d5ug3sl4hmcok7nrsuccti2rjbhxfkek27pyszz6cpc6na"
                   }
                 }
               }
