@@ -1,7 +1,7 @@
 {
   "network_configuration": {
     "default_enable_cis_checks": false,
-    "default_compartment_id": "<OE1-prod-network>",
+    "default_compartment_id": "ocid1.compartment.oc1..aaaaaaaargk26osckert2v3ejf3ygjilz3fma2n4eezrnvun3nitp2tedwsa",
     "network_configuration_categories": {
       "OCVS": {
         "inject_into_existing_vcns": {},
@@ -50,11 +50,11 @@
         "non_vcn_specific_gateways": {
           "inject_into_existing_drgs": {
             "DRGATT-OCVS": {
-              "drg_id": "<PROD DRG>",
+              "drg_id": "ocid1.drg.oc1.eu-frankfurt-1.aaaaaaaajna5c3d5ug3sl4hmcok7nrsuccti2rjbhxfkek27pyszz6cpc6na",
               "drg_attachments": {
                 "DRGATT-FRA-HUB-OCVS": {
                   "display_name": "vcn-ocvs-drg-attachment",
-                  "drg_route_table_id": "<OCID DRG ROUTE>",
+                  "drg_route_table_id": "ocid1.drgroutetable.oc1.eu-frankfurt-1.aaaaaaaa5bbfsw5dumlhkzzuepwzdfphgszjzxx5oda44qe3xtjkeoqml2rq",
                   "network_details": {
                     "attached_resource_key": "VCN-OCVS-KEY",
                     "type": "VCN"
