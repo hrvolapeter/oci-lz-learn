@@ -36,7 +36,17 @@
             "default_security_list": {
               "display_name": "sl-fra-oe1-ocvs",
               "egress_rules": [],
-              "ingress_rules": []
+              "ingress_rules": [
+{
+                                    "stateless": false,
+                                    "protocol": "ICMP",
+                                    "description": "ICMP type 3 code 4",
+                                    "src": "0.0.0.0/0",
+                                    "src_type": "CIDR_BLOCK",
+                                    "icmp_type": 3,
+                                    "icmp_code": 4
+                                }
+                            ]
             },
             "security_lists": {},
             "subnets": {},
